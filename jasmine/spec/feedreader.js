@@ -76,16 +76,19 @@ $(function() {
     describe('New Feed Selection Results', function() {
         var oldContent, newContent='', i=0;
 
+        // Save the feed content
         beforeEach(function(done) {
             loadFeed(i, done);
             oldContent = $(".entry-link .entry").text();
         });
 
+        // Save content of the subsequent feed
         afterEach(function(done) {
+
+            //Check to verify that the last feed differs from the first one
             if ( i+1 === allFeeds.length) {
                 i= -1;
             }
-
             loadFeed(i+1, done);
             newContent = $(".entry-link .entry").text();
             i++;
@@ -98,6 +101,7 @@ $(function() {
             });
         }
 
+        // Save content for comparison for all feeds
         $.each(allFeeds, function(index, feed) {
             compareFeeds(feed, index);
         });
