@@ -1,4 +1,4 @@
 # Project Overview
 
-In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
+The project can be viewed live [here](http://ankitasood.github.io/frontend-nanodegree-feedreader-master/). This project has [Jasmine](http://jasmine.github.io/) test suites incorporated in order to make sure that all the RSS feeds requested return at least one feed, with no empty url, and are different from one another. Tests have also been written to make sure the menu is hidden by default and expands/ collapses whenever the hamburger icon is clicked.
 
